@@ -1,0 +1,143 @@
+name: Update Console SVG
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: write    # needed to push the generated SVG
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Fetch latest activity (PushEvent)
+        id: fetch
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const username = 'aryangupta0102'; // <-- change if needed
+            const { data: events } = await github.rest.activity.listPublicEventsForUser({
+              username,
+              per_page: 20
+            });
+
+            // Find most recent PushEvent (if any)
+            const push = events.find(e => e.type === 'PushEvent');
+            let latestRepo = '—';
+            let latestTime = new Date().toISOString();
+            let latestMsg  = 'No recent pushes';
+
+            if (push) {
+              latestRepo = push.repo?.name ?? '—';
+              latestTime = push.created_at ?? latestTime;
+              const commits = push.payload?.commits ?? [];
+              // Prefer last commit message in that push
+              latestMsg = commits.length ? (commits[commits.length - 1].message || '—') : '—';
+            }
+
+            core.setOutput('latestRepo', latestRepo);
+            core.setOutput('latestTime', latestTime);
+            core.setOutput('latestMsg', latestMsg.replace(/\n/g, ' '));
+
+      - name: Build console.svg
+        env:
+          LATEST_REPO: ${{ steps.fetch.outputs.latestRepo }}
+          LATEST_TIME: ${{ steps.fetch.outputs.latestTime }}
+          LATEST_MSG:  ${{ steps.fetch.outputs.latestMsg }}
+        run: |
+          cat > console.svg <<'SVG'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="980" height="1180" viewBox="0 0 980 1180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+            <title id="title">Aryan Gupta — Console README</title>
+            <desc id="desc">Auto-updating console-styled profile with colored prompts and text.</desc>
+            <defs>
+              <style>
+                .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+                .prompt { fill: #3fb950; font-weight: 700; }
+                .cmd { fill: #79c0ff; }
+                .text { fill: #c9d1d9; }
+                .dim { fill: #8b949e; }
+                .accent { fill: #e3b341; font-weight: 700; }
+                .bullet { fill: #3fb950; }
+                .link { fill: #58a6ff; text-decoration: underline; }
+                .warn { fill: #f85149; }
+                .barTitle { fill: #c9d1d9; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+              </style>
+            </defs>
+
+            <!-- window background -->
+            <rect x="0" y="0" width="980" height="1180" rx="12" fill="#0d1117" />
+            <!-- title bar -->
+            <rect x="0" y="0" width="980" height="40" rx="12" fill="#161b22" />
+            <circle cx="22" cy="20" r="7" fill="#ff5f57"/>
+            <circle cx="44" cy="20" r="7" fill="#febc2e"/>
+            <circle cx="66" cy="20" r="7" fill="#28c840"/>
+            <text x="90" y="25" class="barTitle">aryan@github: ~  —  console</text>
+
+            <!-- content -->
+            <g class="t">
+              <!-- whoami -->
+              <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
+              <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — Student @ Northeastern University (Khoury College of Computer Sciences)</text>
+
+              <!-- about-me -->
+              <text x="24" y="152"><tspan class="prompt">$ </tspan><tspan class="cmd">about-me</tspan></text>
+              <text x="24" y="176" class="dim">&gt; Passionate about blending technology with creativity to address real-world challenges.</text>
+              <text x="24" y="200" class="dim">&gt; Experienced in web development, AI, and software engineering with focus on</text>
+              <text x="24" y="224" class="dim">  front-end design, back-end development, and machine learning.</text>
+              <text x="24" y="248" class="dim">&gt; Projects from interactive React + TypeScript platforms to AI research in Optical Neural Networks.</text>
+              <text x="24" y="272" class="dim">&gt; Always eager to learn, create, and collaborate.</text>
+
+              <!-- current project -->
+              <text x="24" y="320"><tspan class="prompt">$ </tspan><tspan class="cmd">current-project</tspan></text>
+              <text x="24" y="344" class="accent">Rainfall Learning ☔</text>
+              <text x="24" y="368" class="dim">&gt; An all-in-one platform for high school students to:</text>
+              <text x="24" y="392"><tspan class="bullet">  •</tspan><tspan class="text"> Access live tutoring</tspan></text>
+              <text x="24" y="416"><tspan class="bullet">  •</tspan><tspan class="text"> Collaborate in real-time coding</tspan></text>
+              <text x="24" y="440"><tspan class="bullet">  •</tspan><tspan class="text"> Learn from a structured Python curriculum</tspan></text>
+              <text x="24" y="464" class="dim">&gt; Open to developers, educators, and passionate collaborators.</text>
+
+              <!-- interests -->
+              <text x="24" y="512"><tspan class="prompt">$ </tspan><tspan class="cmd">interests</tspan></text>
+              <text x="24" y="536"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami ✂️</tspan></text>
+              <text x="24" y="560"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities 🎭</tspan></text>
+              <text x="24" y="584"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart 🌱</tspan></text>
+
+              <!-- socials -->
+              <text x="24" y="632"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
+              <text x="24" y="656"><tspan class="text">🔗 LinkedIn: </tspan><tspan class="link">https://linkedin.com/in/aryangupta0102</tspan></text>
+              <text x="24" y="680"><tspan class="text">📧 Email: </tspan><tspan class="warn">aryansumit0102@gmail.com</tspan></text>
+
+              <!-- tech stack -->
+              <text x="24" y="728"><tspan class="prompt">$ </tspan><tspan class="cmd">tech-stack --list</tspan></text>
+              <text x="24" y="752" class="dim">CSS • Go • GraphQL • HTML • Java • JavaScript • LaTeX • Markdown • Python • TypeScript • Swift</text>
+              <text x="24" y="776" class="dim">AWS • Netlify • Render • Vercel • Apollo • Django • Express.js • Expo • Flask • MUI • JWT</text>
+              <text x="24" y="800" class="dim">NPM • Node.js • Nodemon • OpenCV • React • React Native • React Query • React Router • React Hook Form</text>
+              <text x="24" y="824" class="dim">Socket.io • TailwindCSS • Yarn • Vite • Firebase • Postgres • MongoDB • Supabase • Prisma</text>
+              <text x="24" y="848" class="dim">Figma • Matplotlib • NumPy • Pandas • PyTorch • TensorFlow • GitHub Actions • GitHub • Docker</text>
+              <text x="24" y="872" class="dim">OpenAPI • Raspberry Pi • Prettier • Postman • Swagger • Twilio</text>
+
+              <!-- dynamic section: latest activity -->
+              <text x="24" y="920"><tspan class="prompt">$ </tspan><tspan class="cmd">status</tspan></text>
+              <text x="24" y="944" class="text">Latest push: <tspan class="accent">${LATEST_REPO}</tspan></text>
+              <text x="24" y="968" class="dim">Message: ${LATEST_MSG}</text>
+              <text x="24" y="992" class="dim">Time: ${LATEST_TIME}</text>
+
+              <!-- exit -->
+              <text x="24" y="1040"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
+            </g>
+          </svg>
+          SVG
+
+      - name: Commit SVG if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update console.svg"
+          file_pattern: console.svg

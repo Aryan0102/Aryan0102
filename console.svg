@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="980" height="1060" viewBox="0 0 980 1060" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Aryan Gupta — Console README</title>
-  <desc id="desc">Auto-updating console-styled profile with colored prompts and text.</desc>
+  <desc id="desc">Console style read me profile</desc>
   <defs>
     <style>
-      .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
       .prompt { fill: #3fb950; font-weight: 700; }
       .cmd { fill: #79c0ff; }
       .text { fill: #c9d1d9; }
@@ -28,6 +28,7 @@
 
   <!-- content -->
   <g class="t">
+  
     <!-- whoami -->
     <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
     <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — Student @ Northeastern University (Khoury College of Computer Sciences)</text>
@@ -71,5 +72,6 @@
 
     <!-- exit -->
     <text x="24" y="920"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
+
   </g>
 </svg>

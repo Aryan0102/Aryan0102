@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="980" height="1180" viewBox="0 0 980 1180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="980" height="1060" viewBox="0 0 980 1060" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Aryan Gupta — Console README</title>
   <desc id="desc">Auto-updating console-styled profile with colored prompts and text.</desc>
   <defs>
@@ -18,7 +18,7 @@
   </defs>
 
   <!-- window background -->
-  <rect x="0" y="0" width="980" height="1180" rx="12" fill="#0d1117" />
+  <rect x="0" y="0" width="980" height="1060" rx="12" fill="#0d1117" />
   <!-- title bar -->
   <rect x="0" y="0" width="980" height="40" rx="12" fill="#161b22" />
   <circle cx="22" cy="20" r="7" fill="#ff5f57"/>
@@ -42,7 +42,7 @@
 
     <!-- current project -->
     <text x="24" y="320"><tspan class="prompt">$ </tspan><tspan class="cmd">current-project</tspan></text>
-    <text x="24" y="344" class="accent">Rainfall Learning ☔</text>
+    <text x="24" y="344" class="accent">Rainfall Learning</text>
     <text x="24" y="368" class="dim">&gt; An all-in-one platform for high school students to:</text>
     <text x="24" y="392"><tspan class="bullet">  •</tspan><tspan class="text"> Access live tutoring</tspan></text>
     <text x="24" y="416"><tspan class="bullet">  •</tspan><tspan class="text"> Collaborate in real-time coding</tspan></text>
@@ -51,9 +51,9 @@
 
     <!-- interests -->
     <text x="24" y="512"><tspan class="prompt">$ </tspan><tspan class="cmd">interests</tspan></text>
-    <text x="24" y="536"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami ✂️</tspan></text>
-    <text x="24" y="560"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities 🎭</tspan></text>
-    <text x="24" y="584"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart 🌱</tspan></text>
+    <text x="24" y="536"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami</tspan></text>
+    <text x="24" y="560"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities</tspan></text>
+    <text x="24" y="584"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart</tspan></text>
 
     <!-- socials -->
     <text x="24" y="632"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
@@ -69,13 +69,7 @@
     <text x="24" y="848" class="dim">Figma • Matplotlib • NumPy • Pandas • PyTorch • TensorFlow • GitHub Actions • GitHub • Docker</text>
     <text x="24" y="872" class="dim">OpenAPI • Raspberry Pi • Prettier • Postman • Swagger • Twilio</text>
 
-    <!-- dynamic section: latest activity -->
-    <text x="24" y="920"><tspan class="prompt">$ </tspan><tspan class="cmd">status</tspan></text>
-    <text x="24" y="944" class="text">Latest push: <tspan class="accent">${LATEST_REPO}</tspan></text>
-    <text x="24" y="968" class="dim">Message: ${LATEST_MSG}</text>
-    <text x="24" y="992" class="dim">Time: ${LATEST_TIME}</text>
-
     <!-- exit -->
-    <text x="24" y="1040"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
+    <text x="24" y="920"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
   </g>
 </svg>

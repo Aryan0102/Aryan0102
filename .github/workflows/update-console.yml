@@ -22,7 +22,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const username = 'aryangupta0102'; // <-- change if needed
+            const username = 'Aryan0102';
             const { data: events } = await github.rest.activity.listPublicEventsForUser({
               username,
               per_page: 20

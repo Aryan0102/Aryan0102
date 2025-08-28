@@ -1,13 +1,39 @@
-# 💫 About Me:
-I am Aryan Gupta, a student at Northeastern University’s Khoury College of Computer Sciences. I’m passionate about blending technology with creativity to address real-world challenges. My expertise spans web development, AI, and software engineering, with a strong focus on front-end design, back-end development, and machine learning applications.
+# 💫 About Me  
 
-I’ve had the privilege of working on diverse projects, from creating interactive web platforms with React and TypeScript to contributing to AI research on Optical Neural Networks. My work reflects a commitment to innovation and making a meaningful impact, whether by designing tools that enhance user experience or developing algorithms that solve complex problems.
+I am **Aryan Gupta**, a student at **Northeastern University’s Khoury College of Computer Sciences**.  
+I’m passionate about blending technology with creativity to address real-world challenges.  
 
-When I'm not coding, I enjoy folding intricate origami designs, participating in cultural activities, and volunteering for causes close to my heart. I’m always eager to learn, create, and collaborate to push boundaries in technology.
+My expertise spans **web development, AI, and software engineering**, with a strong focus on:  
+- Front-end design  
+- Back-end development  
+- Machine learning applications  
 
-Currently I am working on Rainfall Learning - an all-in-one platform bringing live tutoring, real-time collaborative coding, and a structured Python curriculum to make programming education more personal, affordable, and effective for high school students. Contact me to join, we’re open to developers, educators, and anyone passionate about reshaping how students learn to code.
+---
 
+## Experience & Projects  
 
+I’ve had the privilege of working on diverse projects, from creating interactive web platforms with **React** and **TypeScript** to contributing to **AI research on Optical Neural Networks**.  
+My work reflects a commitment to innovation and making a meaningful impact, whether by designing tools that enhance user experience or developing algorithms that solve complex problems.  
+
+---
+
+## Beyond Code  
+
+When I'm not coding, I enjoy folding intricate origami designs, participating in cultural activities, and volunteering for causes close to my heart.  
+I’m always eager to **learn, create, and collaborate** to push boundaries in technology.  
+
+---
+
+## Current Work: Rainfall Learning  
+
+I am currently working on **Rainfall Learning** — an all-in-one platform bringing:  
+- Live tutoring  
+- Real-time collaborative coding  
+- A structured Python curriculum  
+
+Our goal is to make programming education more **personal, affordable, and effective** for high school students.  
+
+**Contact me to join** — we’re open to developers, educators, and anyone passionate about reshaping how students learn to code.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/aryangupta0102) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:aryansumit0102@gmail.com) 

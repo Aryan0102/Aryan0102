@@ -19,37 +19,32 @@ jobs:
 
       - name: Build console.svg
         run: |
-          cat > console.svg <<'SVG'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="980" height="1060" viewBox="0 0 980 1060" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-            <title id="title">Aryan Gupta — Console README</title>
-            <desc id="desc">Auto-updating console-styled profile with colored prompts and text.</desc>
-            <defs>
-              <style>
-                .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-                .prompt { fill: #3fb950; font-weight: 700; }
-                .cmd { fill: #79c0ff; }
-                .text { fill: #c9d1d9; }
-                .dim { fill: #8b949e; }
-                .accent { fill: #e3b341; font-weight: 700; }
-                .bullet { fill: #3fb950; }
-                .link { fill: #58a6ff; text-decoration: underline; }
-                .warn { fill: #f85149; }
-                .barTitle { fill: #c9d1d9; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-              </style>
-            </defs>
+          # -------------------------------
+          # CONFIG
+          # -------------------------------
+          WIDTH=980
+          HEIGHT=1060
+          FONT="14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+          TITLE="Aryan Gupta — Console README"
+          DESCRIPTION="Console style read me profile"
 
-            <!-- window background -->
-            <rect x="0" y="0" width="980" height="1060" rx="12" fill="#0d1117" />
-            <!-- title bar -->
-            <rect x="0" y="0" width="980" height="40" rx="12" fill="#161b22" />
-            <circle cx="22" cy="20" r="7" fill="#ff5f57"/>
-            <circle cx="44" cy="20" r="7" fill="#febc2e"/>
-            <circle cx="66" cy="20" r="7" fill="#28c840"/>
-            <text x="90" y="25" class="barTitle">aryan@github: ~  —  console</text>
+          COLOR_BG="#0d1117"
+          COLOR_BAR="#161b22"
+          COLOR_CLOSE="#ff5f57"
+          COLOR_MIN="#febc2e"
+          COLOR_MAX="#28c840"
+          COLOR_PROMPT="#3fb950"
+          COLOR_CMD="#79c0ff"
+          COLOR_TEXT="#c9d1d9"
+          COLOR_DIM="#8b949e"
+          COLOR_ACCENT="#e3b341"
+          COLOR_LINK="#58a6ff"
+          COLOR_WARN="#f85149"
 
-            <!-- content -->
-            <g class="t">
+          # -------------------------------
+          # CONSOLE CONTENT
+          # -------------------------------
+          CONSOLE_CONTENT='
               <!-- whoami -->
               <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
               <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — Student @ Northeastern University (Khoury College of Computer Sciences)</text>
@@ -93,6 +88,43 @@ jobs:
 
               <!-- exit -->
               <text x="24" y="920"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
+          '
+
+          # -------------------------------
+          # SVG Build
+          # -------------------------------
+          cat > console.svg <<SVG
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="$WIDTH" height="$HEIGHT" viewBox="0 0 $WIDTH $HEIGHT" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+            <title id="title">$TITLE</title>
+            <desc id="desc">$DESCRIPTION</desc>
+            <defs>
+              <style>
+                .t { font: $FONT; }
+                .prompt { fill: $COLOR_PROMPT; font-weight: 700; }
+                .cmd { fill: $COLOR_CMD; }
+                .text { fill: $COLOR_TEXT; }
+                .dim { fill: $COLOR_DIM; }
+                .accent { fill: $COLOR_ACCENT; font-weight: 700; }
+                .bullet { fill: $COLOR_PROMPT; }
+                .link { fill: $COLOR_LINK; text-decoration: underline; }
+                .warn { fill: $COLOR_WARN; }
+                .barTitle { fill: $COLOR_TEXT; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+              </style>
+            </defs>
+
+            <!-- window background -->
+            <rect x="0" y="0" width="$WIDTH" height="$HEIGHT" rx="12" fill="$COLOR_BG" />
+            <!-- title bar -->
+            <rect x="0" y="0" width="$WIDTH" height="40" rx="12" fill="$COLOR_BAR" />
+            <circle cx="22" cy="20" r="7" fill="$COLOR_CLOSE"/>
+            <circle cx="44" cy="20" r="7" fill="$COLOR_MIN"/>
+            <circle cx="66" cy="20" r="7" fill="$COLOR_MAX"/>
+            <text x="90" y="25" class="barTitle">aryan@github: ~  —  console</text>
+
+            <!-- content -->
+            <g class="t">
+            $CONSOLE_CONTENT
             </g>
           </svg>
           SVG

@@ -49,7 +49,7 @@
     <text x="40" y="404" class="text">Graph theory, proofs, combinatorics, logic | Office hours | Grading assignments</text>
     
     <text x="24" y="432" class="success">✓ Quak Travel — Software Engineer</text>
-    <text x="40" y="456" class="text">Leading engineering team building AI-powered travel platform | Secured $30K funding</text>
+    <text x="40" y="456" class="text">Leading engineering team building AI-powered travel platform</text>
     
     <text x="24" y="484" class="success">✓ Barbershop Operations and Client Management — Software Engineer Intern</text>
     <text x="40" y="508" class="text">Independently developed iOS app streamlining booking, payments, and scheduling</text>
@@ -79,14 +79,14 @@
 
     <!-- experience timeline -->
     <text x="24" y="1032"><tspan class="prompt">$ </tspan><tspan class="cmd">git log --oneline --work</tspan></text>
-    <text x="24" y="1060"><tspan class="accent">aug2025</tspan><tspan class="text"> Started TA position for Discrete Structures — 500+ students</tspan></text>
-    <text x="24" y="1084"><tspan class="accent">jun2025</tspan><tspan class="text"> Joined Barbershop Operations and Client Management</tspan></text>
-    <text x="24" y="1108"><tspan class="accent">may2025</tspan><tspan class="text"> Promoted to Tech Lead @ NER | Co-Director @ Oasis</tspan></text>
-    <text x="24" y="1132"><tspan class="accent">mar2025</tspan><tspan class="text"> Started tutoring CS courses on Knack platform</tspan></text>
-    <text x="24" y="1156"><tspan class="accent">feb2025</tspan><tspan class="text"> Joined Quak Travel — Built platform, secured funding</tspan></text>
-    <text x="24" y="1180"><tspan class="accent">jan2025</tspan><tspan class="text"> Led CoDesign team @ Oasis — 5 devs, 100+ demo viewers</tspan></text>
-    <text x="24" y="1204"><tspan class="accent">oct2024</tspan><tspan class="text"> Started Research @ Nano-Optics Lab</tspan></text>
-    <text x="24" y="1228"><tspan class="accent">sep2024</tspan><tspan class="text"> Joined NER as Web Developer — FinishLine platform</tspan></text>
+    <text x="40" y="1060"><tspan class="accent">aug2025</tspan><tspan class="text">  Started TA position for Discrete Structures — 500+ students</tspan></text>
+    <text x="40" y="1084"><tspan class="accent">jun2025</tspan><tspan class="text">  Joined Barbershop Operations and Client Management</tspan></text>
+    <text x="40" y="1108"><tspan class="accent">may2025</tspan><tspan class="text">  Promoted to Tech Lead @ NER | Co-Director @ Oasis</tspan></text>
+    <text x="40" y="1132"><tspan class="accent">mar2025</tspan><tspan class="text">  Started tutoring CS courses on Knack platform</tspan></text>
+    <text x="40" y="1156"><tspan class="accent">feb2025</tspan><tspan class="text">  Joined Quak Travel — Built platform, secured funding</tspan></text>
+    <text x="40" y="1180"><tspan class="accent">jan2025</tspan><tspan class="text">  Led CoDesign team @ Oasis — 5 devs, 100+ demo viewers</tspan></text>
+    <text x="40" y="1204"><tspan class="accent">oct2024</tspan><tspan class="text">  Started Research @ Nano-Optics Lab</tspan></text>
+    <text x="40" y="1228"><tspan class="accent">sep2024</tspan><tspan class="text">  Joined NER as Web Developer — FinishLine platform</tspan></text>
 
     <!-- projects -->
     <text x="24" y="1280"><tspan class="prompt">$ </tspan><tspan class="cmd">ls -la ~/projects/</tspan></text>

@@ -22,8 +22,8 @@ jobs:
           # -------------------------------
           # CONFIG
           # -------------------------------
-          WIDTH=980
-          HEIGHT=1060
+          WIDTH=1200
+          HEIGHT=2480
           FONT="14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
           TITLE="Aryan Gupta — Console README"
           DESCRIPTION="Console style read me profile"
@@ -40,6 +40,7 @@ jobs:
           COLOR_ACCENT="#e3b341"
           COLOR_LINK="#58a6ff"
           COLOR_WARN="#f85149"
+          COLOR_SUCCESS="#3fb950"
 
           # -------------------------------
           # CONSOLE CONTENT
@@ -47,47 +48,120 @@ jobs:
           CONSOLE_CONTENT='
               <!-- whoami -->
               <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
-              <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — Student @ Northeastern University (Khoury College of Computer Sciences)</text>
+              <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinsonʼs Honors Program | 4.0 GPA</text>
+              <text x="24" y="128" class="dim">📍 Boston, MA | Available for Co-ops/Internships: Jan – Sep 2026</text>
 
               <!-- about-me -->
-              <text x="24" y="152"><tspan class="prompt">$ </tspan><tspan class="cmd">about-me</tspan></text>
-              <text x="24" y="176" class="dim">&gt; Passionate about blending technology with creativity to address real-world challenges.</text>
-              <text x="24" y="200" class="dim">&gt; Experienced in web development, AI, and software engineering with focus on</text>
-              <text x="24" y="224" class="dim">  front-end design, back-end development, and machine learning.</text>
-              <text x="24" y="248" class="dim">&gt; Projects from interactive React + TypeScript platforms to AI research in Optical Neural Networks.</text>
-              <text x="24" y="272" class="dim">&gt; Always eager to learn, create, and collaborate.</text>
+              <text x="24" y="176"><tspan class="prompt">$ </tspan><tspan class="cmd">about-me --verbose</tspan></text>
+              <text x="24" y="200" class="dim">&gt; Passionate about blending technology with creativity to address real-world challenges.</text>
+              <text x="24" y="224" class="dim">&gt; Full-stack engineer with experience from fast-paced startups to cutting-edge research labs.</text>
+              <text x="24" y="248" class="dim">&gt; Leading teams while staying deeply involved in code — from architecture to implementation.</text>
 
-              <!-- current project -->
-              <text x="24" y="320"><tspan class="prompt">$ </tspan><tspan class="cmd">current-project</tspan></text>
-              <text x="24" y="344" class="accent">Rainfall Learning</text>
-              <text x="24" y="368" class="dim">&gt; An all-in-one platform for high school students to:</text>
-              <text x="24" y="392"><tspan class="bullet">  •</tspan><tspan class="text"> Access live tutoring</tspan></text>
-              <text x="24" y="416"><tspan class="bullet">  •</tspan><tspan class="text"> Collaborate in real-time coding</tspan></text>
-              <text x="24" y="440"><tspan class="bullet">  •</tspan><tspan class="text"> Learn from a structured Python curriculum</tspan></text>
-              <text x="24" y="464" class="dim">&gt; Open to developers, educators, and passionate collaborators.</text>
+              <!-- current-role -->
+              <text x="24" y="296"><tspan class="prompt">$ </tspan><tspan class="cmd">cat current-roles.txt</tspan></text>
+              <text x="24" y="320" class="success">✓ Teaching Assistant — Discrete Structures @ Northeastern</text>
+              <text x="24" y="344" class="text">  Teaching 500+ students | Weekly recitations for 20+ students each</text>
+              <text x="24" y="368" class="text">  Graph theory, proofs, combinatorics, logic | Office hours | Grading assignments</text>
+              
+              <text x="24" y="392" class="success">✓ Quak Travel — Software Engineer</text>
+              <text x="24" y="416" class="text">  Leading engineering team building AI-powered travel platform</text>
+              
+              <text x="24" y="440" class="success">✓ Barbershop Operations and Client Management — Software Engineer Intern</text>
+              <text x="24" y="464" class="text">  Independently developed iOS app streamlining booking, payments, and scheduling</text>
+              <text x="24" y="488" class="text">  10+ barber clients | Improved retention by 20% | Loading times 60% faster with Zustand</text>
+              <text x="24" y="512" class="text">  Assisted in UI/UX redesign across all platforms</text>
+              
+              <text x="24" y="536" class="success">✓ Optical Neural Networks Research — Undergrad Researcher</text>
+              <text x="24" y="560" class="text">  Working with Dr. Yongmin Liu on cutting-edge ONN research</text>
+              <text x="24" y="584" class="text">  Developing GNN architectures for meta-surface electric field predictions</text>
+              <text x="24" y="608" class="text">  80% accuracy achieved | 50% reduction in training time and data requirements</text>
+              <text x="24" y="632" class="text">  Hands-on with photonics, meta-materials, ML frameworks</text>
+              
+              <text x="24" y="656" class="success">✓ Northeastern Electric Racing — Tech Lead</text>
+              <text x="24" y="680" class="text">  Leading 10+ developer team on FinishLine management suite for 50+ engineers</text>
+              <text x="24" y="704" class="text">  Implementing Rules Compliance Dashboard - upload, assign, track competition rules</text>
+              <text x="24" y="728" class="text">  Drive technical strategy, architecture decisions, mentoring team members</text>
+              <text x="24" y="752" class="text">  Sprint planning, code reviews, technical roadmap in agile environment</text>
+              
+              <text x="24" y="776" class="success">✓ Oasis @ Northeastern — Project Series Co-Director</text>
+              <text x="24" y="800" class="text">  Co-directing program teaching web dev to 100+ students</text>
+              <text x="24" y="824" class="text">  Led curriculum design, mentoring, and workshops</text>
+              <text x="24" y="848" class="text">  Previously led CoDesign team - 5 devs, showcased to 100+ people</text>
+              
+              <text x="24" y="872" class="success">✓ Knack — Computer Science Tutor</text>
+              <text x="24" y="896" class="text">  Tutoring: CS1, CS2, Discrete Structures, Math Reasoning, Cybersecurity</text>
+              <text x="24" y="920" class="text">  Helping students master fundamentals through personalized sessions</text>
+
+              <!-- experience timeline -->
+              <text x="24" y="968"><tspan class="prompt">$ </tspan><tspan class="cmd">git log --oneline --work</tspan></text>
+              <text x="24" y="992"><tspan class="accent">aug2025</tspan> Started TA position for Discrete Structures — 500+ students</text>
+              <text x="24" y="1016"><tspan class="accent">jun2025</tspan> Joined Barbershop Operations and Client Management</text>
+              <text x="24" y="1040"><tspan class="accent">may2025</tspan> Promoted to Tech Lead @ NER | Co-Director @ Oasis</text>
+              <text x="24" y="1064"><tspan class="accent">mar2025</tspan> Started tutoring CS courses on Knack platform</text>
+              <text x="24" y="1088"><tspan class="accent">feb2025</tspan> Joined Quak Travel — Built platform, secured funding</text>
+              <text x="24" y="1112"><tspan class="accent">jan2025</tspan> Led CoDesign team @ Oasis — 5 devs, 100+ demo viewers</text>
+              <text x="24" y="1136"><tspan class="accent">oct2024</tspan> Started Research @ Nano-Optics Lab</text>
+              <text x="24" y="1160"><tspan class="accent">sep2024</tspan> Joined NER as Web Developer — FinishLine platform</text>
+
+              <!-- projects -->
+              <text x="24" y="1208"><tspan class="prompt">$ </tspan><tspan class="cmd">ls -la ~/projects/</tspan></text>
+              <text x="24" y="1232" class="accent">drwxr-xr-x  rainfall-learning/</text>
+              <text x="24" y="1256" class="text">  └─ Live tutoring platform solving lack of collaborative coding in online education</text>
+              <text x="24" y="1280" class="text">     Leading 20+ member team</text>
+              <text x="24" y="1304" class="text">     Core UI: Embedded IDE with CRDT-based real-time collaboration</text>
+              <text x="24" y="1328" class="text">     Video meetings, curriculum viewer, interactive Python lessons</text>
+              <text x="24" y="1352" class="text">     Tech: React, TypeScript, Express, PostgreSQL, ViTest, Docusaurus</text>
+              <text x="24" y="1376" class="text">     CI/CD: GitHub Actions, Docker containerization, automated testing</text>
+              
+              <text x="24" y="1400" class="accent">drwxr-xr-x  codesign/</text>
+              <text x="24" y="1424" class="text">  └─ Social platform connecting developers/designers for startup collaborations</text>
+              <text x="24" y="1448" class="text">     Led 5-person team | 2-month sprint | Showcased to 100+ at Oasis demo day</text>
+              <text x="24" y="1472" class="text">     Features: User profiles, Google OAuth, real-time messaging</text>
+              <text x="24" y="1496" class="text">     Smart matchmaking algorithms based on skills/interests</text>
+              <text x="24" y="1520" class="text">     Secure JWT auth, Bcrypt encryption, scalable REST APIs</text>
+              <text x="24" y="1544" class="text">     Tech: React, React Native, Flask, MongoDB | Web + Mobile clients</text>
+
+              <!-- tech stack - ORGANIZED AND SORTED -->
+              <text x="24" y="1592"><tspan class="prompt">$ </tspan><tspan class="cmd">tech-stack --categorized</tspan></text>
+              <text x="24" y="1616" class="success">Languages:</text>
+              <text x="24" y="1640" class="dim">  Python • Java • JavaScript • TypeScript • Swift • SQL • HTML • CSS • Go • GraphQL • LaTeX • Markdown</text>
+              <text x="24" y="1664" class="success">Frontend:</text>
+              <text x="24" y="1688" class="dim">  React • React Native • React Query • React Router • React Hook Form • TailwindCSS • MUI • Expo</text>
+              <text x="24" y="1712" class="success">Backend:</text>
+              <text x="24" y="1736" class="dim">  Node.js • Express.js • Flask • Django • Socket.io • JWT • Prisma • Nodemon</text>
+              <text x="24" y="1760" class="success">Databases:</text>
+              <text x="24" y="1784" class="dim">  PostgreSQL • MongoDB • Firebase • Supabase</text>
+              <text x="24" y="1808" class="success">Cloud/DevOps:</text>
+              <text x="24" y="1832" class="dim">  AWS • Docker • GitHub Actions • Vercel • Netlify • Render</text>
+              <text x="24" y="1856" class="success">ML/Data:</text>
+              <text x="24" y="1880" class="dim">  TensorFlow • PyTorch • OpenCV • NumPy • Pandas • Matplotlib • Scikit-learn</text>
+              <text x="24" y="1904" class="success">Tools:</text>
+              <text x="24" y="1928" class="dim">  Git • GitHub • Postman • Swagger • OpenAPI • Figma • Prettier • NPM • Yarn • Vite • Twilio • Raspberry Pi</text>
+
+              <!-- currently-learning -->
+              <text x="24" y="1976"><tspan class="prompt">$ </tspan><tspan class="cmd">tail -f learning.log</tspan></text>
+              <text x="24" y="2000" class="dim">[2025-09-15] Learning Rust for systems programming</text>
+              <text x="24" y="2024" class="dim">[2025-09-14] Studying distributed systems architecture</text>
+              <text x="24" y="2048" class="dim">[2025-09-13] Preparing for AWS Cloud Practitioner certification</text>
+              <text x="24" y="2072" class="dim">[2025-09-12] Diving into systems level programming</text>
+              <text x="24" y="2096" class="dim">[2025-09-11] Exploring LLMs and AI fundamentals</text>
 
               <!-- interests -->
-              <text x="24" y="512"><tspan class="prompt">$ </tspan><tspan class="cmd">interests</tspan></text>
-              <text x="24" y="536"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami</tspan></text>
-              <text x="24" y="560"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities</tspan></text>
-              <text x="24" y="584"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart</tspan></text>
-
+              <text x="24" y="2144"><tspan class="prompt">$ </tspan><tspan class="cmd">echo $INTERESTS</tspan></text>
+              <text x="24" y="2168"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami</tspan></text>
+              <text x="24" y="2192"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities</tspan></text>
+              <text x="24" y="2216"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart</tspan></text>
+              
               <!-- socials -->
-              <text x="24" y="632"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
-              <text x="24" y="656"><tspan class="text">🔗 LinkedIn: </tspan><tspan class="link">https://linkedin.com/in/aryangupta0102</tspan></text>
-              <text x="24" y="680"><tspan class="text">📧 Email: </tspan><tspan class="warn">aryansumit0102@gmail.com</tspan></text>
-
-              <!-- tech stack -->
-              <text x="24" y="728"><tspan class="prompt">$ </tspan><tspan class="cmd">tech-stack --list</tspan></text>
-              <text x="24" y="752" class="dim">CSS • Go • GraphQL • HTML • Java • JavaScript • LaTeX • Markdown • Python • TypeScript • Swift</text>
-              <text x="24" y="776" class="dim">AWS • Netlify • Render • Vercel • Apollo • Django • Express.js • Expo • Flask • MUI • JWT</text>
-              <text x="24" y="800" class="dim">NPM • Node.js • Nodemon • OpenCV • React • React Native • React Query • React Router • React Hook Form</text>
-              <text x="24" y="824" class="dim">Socket.io • TailwindCSS • Yarn • Vite • Firebase • Postgres • MongoDB • Supabase • Prisma</text>
-              <text x="24" y="848" class="dim">Figma • Matplotlib • NumPy • Pandas • PyTorch • TensorFlow • GitHub Actions • GitHub • Docker</text>
-              <text x="24" y="872" class="dim">OpenAPI • Raspberry Pi • Prettier • Postman • Swagger • Twilio</text>
+              <text x="24" y="2264"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
+              <text x="24" y="2288"><tspan class="text">🔗 LinkedIn: </tspan><tspan class="link">https://linkedin.com/in/aryangupta0102</tspan></text>
+              <text x="24" y="2312"><tspan class="text">📧 Email: </tspan><tspan class="warn">aryansumit0102@gmail.com</tspan></text>
+              <text x="24" y="2336"><tspan class="text">🌐 Portfolio: </tspan><tspan class="link">https://aryan-sgupta.com</tspan></text>
+              <text x="24" y="2360"><tspan class="text">🐙 GitHub: </tspan><tspan class="link">https://github.com/Aryan0102</tspan></text>
+              <text x="24" y="2384"><tspan class="text">📱 Phone: </tspan><tspan class="warn">(570) 236-4213</tspan></text>
 
               <!-- exit -->
-              <text x="24" y="920"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
+              <text x="24" y="2432"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
           '
 
           # -------------------------------
@@ -109,6 +183,7 @@ jobs:
                 .bullet { fill: $COLOR_PROMPT; }
                 .link { fill: $COLOR_LINK; text-decoration: underline; }
                 .warn { fill: $COLOR_WARN; }
+                .success { fill: $COLOR_SUCCESS; font-weight: 600; }
                 .barTitle { fill: $COLOR_TEXT; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
               </style>
             </defs>

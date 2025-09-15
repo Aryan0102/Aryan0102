@@ -65,7 +65,7 @@ jobs:
               <text x="40" y="404" class="text">Graph theory, proofs, combinatorics, logic | Office hours | Grading assignments</text>
               
               <text x="24" y="432" class="success">✓ Quak Travel — Software Engineer</text>
-              <text x="40" y="456" class="text">Leading engineering team building AI-powered travel platform | Secured $30K funding</text>
+              <text x="40" y="456" class="text">Leading engineering team building AI-powered travel platform</text>
               
               <text x="24" y="484" class="success">✓ Barbershop Operations and Client Management — Software Engineer Intern</text>
               <text x="40" y="508" class="text">Independently developed iOS app streamlining booking, payments, and scheduling</text>
@@ -95,118 +95,8 @@ jobs:
 
               <!-- experience timeline -->
               <text x="24" y="1032"><tspan class="prompt">$ </tspan><tspan class="cmd">git log --oneline --work</tspan></text>
-              <text x="24" y="1060"><tspan class="accent">aug2025</tspan><tspan class="text"> Started TA position for Discrete Structures — 500+ students</tspan></text>
-              <text x="24" y="1084"><tspan class="accent">jun2025</tspan><tspan class="text"> Joined Barbershop Operations and Client Management</tspan></text>
-              <text x="24" y="1108"><tspan class="accent">may2025</tspan><tspan class="text"> Promoted to Tech Lead @ NER | Co-Director @ Oasis</tspan></text>
-              <text x="24" y="1132"><tspan class="accent">mar2025</tspan><tspan class="text"> Started tutoring CS courses on Knack platform</tspan></text>
-              <text x="24" y="1156"><tspan class="accent">feb2025</tspan><tspan class="text"> Joined Quak Travel — Built platform, secured funding</tspan></text>
-              <text x="24" y="1180"><tspan class="accent">jan2025</tspan><tspan class="text"> Led CoDesign team @ Oasis — 5 devs, 100+ demo viewers</tspan></text>
-              <text x="24" y="1204"><tspan class="accent">oct2024</tspan><tspan class="text"> Started Research @ Nano-Optics Lab</tspan></text>
-              <text x="24" y="1228"><tspan class="accent">sep2024</tspan><tspan class="text"> Joined NER as Web Developer — FinishLine platform</tspan></text>
-
-              <!-- projects -->
-              <text x="24" y="1280"><tspan class="prompt">$ </tspan><tspan class="cmd">ls -la ~/projects/</tspan></text>
-              <text x="24" y="1308" class="accent">drwxr-xr-x  rainfall-learning/</text>
-              <text x="40" y="1332" class="text">└─ Live tutoring platform solving lack of collaborative coding in online education</text>
-              <text x="56" y="1356" class="text">Leading 20+ member team | Main code reviewer | Architectural decisions</text>
-              <text x="56" y="1380" class="text">Core UI: Embedded IDE with CRDT-based real-time collaboration</text>
-              <text x="56" y="1404" class="text">Video meetings, curriculum viewer, interactive Python lessons</text>
-              <text x="56" y="1428" class="text">Tech: React, TypeScript, Express, PostgreSQL, ViTest, Docusaurus</text>
-              <text x="56" y="1452" class="text">CI/CD: GitHub Actions, Docker containerization, automated testing</text>
-              
-              <text x="24" y="1480" class="accent">drwxr-xr-x  codesign/</text>
-              <text x="40" y="1504" class="text">└─ Social platform connecting developers/designers for startup collaborations</text>
-              <text x="56" y="1528" class="text">Led 5-person team | 2-month sprint | Showcased to 100+ at Oasis demo day</text>
-              <text x="56" y="1552" class="text">Features: User profiles, Google OAuth, real-time messaging</text>
-              <text x="56" y="1576" class="text">Smart matchmaking algorithms based on skills/interests</text>
-              <text x="56" y="1600" class="text">Secure JWT auth, Bcrypt encryption, scalable REST APIs</text>
-              <text x="56" y="1624" class="text">Tech: React, React Native, Flask, MongoDB | Web + Mobile clients</text>
-
-              <!-- tech stack -->
-              <text x="24" y="1676"><tspan class="prompt">$ </tspan><tspan class="cmd">tech-stack --categorized</tspan></text>
-              <text x="24" y="1704" class="success">Languages:</text>
-              <text x="40" y="1728" class="dim">Python • Java • JavaScript • TypeScript • Swift • SQL • HTML • CSS • Go • GraphQL • LaTeX • Markdown</text>
-              <text x="24" y="1756" class="success">Frontend:</text>
-              <text x="40" y="1780" class="dim">React • React Native • React Query • React Router • React Hook Form • TailwindCSS • MUI • Expo</text>
-              <text x="24" y="1808" class="success">Backend:</text>
-              <text x="40" y="1832" class="dim">Node.js • Express.js • Flask • Django • Socket.io • JWT • Prisma • Nodemon</text>
-              <text x="24" y="1860" class="success">Databases:</text>
-              <text x="40" y="1884" class="dim">PostgreSQL • MongoDB • Firebase • Supabase</text>
-              <text x="24" y="1912" class="success">Cloud/DevOps:</text>
-              <text x="40" y="1936" class="dim">AWS • Docker • GitHub Actions • Vercel • Netlify • Render</text>
-              <text x="24" y="1964" class="success">ML/Data:</text>
-              <text x="40" y="1988" class="dim">TensorFlow • PyTorch • OpenCV • NumPy • Pandas • Matplotlib • Scikit-learn</text>
-              <text x="24" y="2016" class="success">Tools:</text>
-              <text x="40" y="2040" class="dim">Git • GitHub • Postman • Swagger • OpenAPI • Figma • Prettier • NPM • Yarn • Vite • Twilio • Raspberry Pi</text>
-
-              <!-- currently-learning -->
-              <text x="24" y="2092"><tspan class="prompt">$ </tspan><tspan class="cmd">tail -f learning.log</tspan></text>
-              <text x="24" y="2120" class="dim">[2025-09-15] Learning Rust for systems programming</text>
-              <text x="24" y="2144" class="dim">[2025-09-14] Studying distributed systems architecture</text>
-              <text x="24" y="2168" class="dim">[2025-09-13] Preparing for AWS Cloud Practitioner certification</text>
-              <text x="24" y="2192" class="dim">[2025-09-12] Diving into systems level programming</text>
-              <text x="24" y="2216" class="dim">[2025-09-11] Exploring LLMs and AI fundamentals</text>
-
-              <!-- interests -->
-              <text x="24" y="2268"><tspan class="prompt">$ </tspan><tspan class="cmd">echo $INTERESTS</tspan></text>
-              <text x="24" y="2296"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami</tspan></text>
-              <text x="24" y="2320"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities</tspan></text>
-              <text x="24" y="2344"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart</tspan></text>
-              
-              <!-- socials -->
-              <text x="24" y="2396"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
-              <text x="24" y="2424"><tspan class="text">🔗 LinkedIn: </tspan><tspan class="link">https://linkedin.com/in/aryangupta0102</tspan></text>
-              <text x="24" y="2448"><tspan class="text">📧 Email: </tspan><tspan class="warn">aryansumit0102@gmail.com</tspan></text>
-              <text x="24" y="2472"><tspan class="text">🌐 Portfolio: </tspan><tspan class="link">https://aryan-sgupta.com</tspan></text>
-              <text x="24" y="2496"><tspan class="text">🐙 GitHub: </tspan><tspan class="link">https://github.com/Aryan0102</tspan></text>
-              <text x="24" y="2520"><tspan class="text">📱 Phone: </tspan><tspan class="warn">(570) 236-4213</tspan></text>
-
-              <!-- exit -->
-              <text x="24" y="2568"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
-          '
-
-          # -------------------------------
-          # SVG Build
-          # -------------------------------
-          cat > console.svg <<SVG
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="$WIDTH" height="$HEIGHT" viewBox="0 0 $WIDTH $HEIGHT" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-            <title id="title">$TITLE</title>
-            <desc id="desc">$DESCRIPTION</desc>
-            <defs>
-              <style>
-                .t { font: $FONT; }
-                .prompt { fill: $COLOR_PROMPT; font-weight: 700; }
-                .cmd { fill: $COLOR_CMD; }
-                .text { fill: $COLOR_TEXT; }
-                .dim { fill: $COLOR_DIM; }
-                .accent { fill: $COLOR_ACCENT; font-weight: 700; }
-                .bullet { fill: $COLOR_PROMPT; }
-                .link { fill: $COLOR_LINK; text-decoration: underline; }
-                .warn { fill: $COLOR_WARN; }
-                .success { fill: $COLOR_SUCCESS; font-weight: 600; }
-                .barTitle { fill: $COLOR_TEXT; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-              </style>
-            </defs>
-
-            <!-- window background -->
-            <rect x="0" y="0" width="$WIDTH" height="$HEIGHT" rx="12" fill="$COLOR_BG" />
-            <!-- title bar -->
-            <rect x="0" y="0" width="$WIDTH" height="40" rx="12" fill="$COLOR_BAR" />
-            <circle cx="22" cy="20" r="7" fill="$COLOR_CLOSE"/>
-            <circle cx="44" cy="20" r="7" fill="$COLOR_MIN"/>
-            <circle cx="66" cy="20" r="7" fill="$COLOR_MAX"/>
-            <text x="90" y="25" class="barTitle">aryan@github: ~  —  console</text>
-
-            <!-- content -->
-            <g class="t">
-            $CONSOLE_CONTENT
-            </g>
-          </svg>
-          SVG
-
-      - name: Commit SVG if changed
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update console.svg"
-          file_pattern: console.svg
+              <text x="40" y="1060"><tspan class="accent">aug2025</tspan><tspan class="text">  Started TA position for Discrete Structures — 500+ students</tspan></text>
+              <text x="40" y="1084"><tspan class="accent">jun2025</tspan><tspan class="text">  Joined Barbershop Operations and Client Management</tspan></text>
+              <text x="40" y="1108"><tspan class="accent">may2025</tspan><tspan class="text">  Promoted to Tech Lead @ NER | Co-Director @ Oasis</tspan></text>
+              <text x="40" y="1132"><tspan class="accent">mar2025</tspan><tspan class="text">  Started tutoring CS courses on Knack platform</tspan></text>
+              <text x="40" y="1156"><tspan class="accent">feb2025</tspan><tspan class="text">  Joined Quak Travel — Built platform, secured funding</tspan

@@ -1,4 +1,4 @@
-name: Update Console SVG
+name: Update Console SVG and PNG
 
 on:
   schedule:
@@ -17,34 +17,19 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+          npm install -g puppeteer
+
       - name: Build console.svg
         run: |
-          # -------------------------------
-          # CONFIG
-          # -------------------------------
-          WIDTH=1200
-          HEIGHT=2600
-          FONT="14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
-          TITLE="Aryan Gupta — Console README"
-          DESCRIPTION="Console style read me profile"
-
-          COLOR_BG="#0d1117"
-          COLOR_BAR="#161b22"
-          COLOR_CLOSE="#ff5f57"
-          COLOR_MIN="#febc2e"
-          COLOR_MAX="#28c840"
-          COLOR_PROMPT="#3fb950"
-          COLOR_CMD="#79c0ff"
-          COLOR_TEXT="#c9d1d9"
-          COLOR_DIM="#8b949e"
-          COLOR_ACCENT="#e3b341"
-          COLOR_LINK="#58a6ff"
-          COLOR_WARN="#f85149"
-          COLOR_SUCCESS="#3fb950"
-
-          # -------------------------------
-          # SVG Build
-          # -------------------------------
           cat > console.svg <<'EOF'
           <?xml version="1.0" encoding="UTF-8"?>
           <svg width="1200" height="2600" viewBox="0 0 1200 2600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
@@ -52,7 +37,7 @@ jobs:
             <desc id="desc">Console style read me profile</desc>
             <defs>
               <style>
-                .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+                .t { font-family: monospace; font-size: 14px; }
                 .prompt { fill: #3fb950; font-weight: 700; }
                 .cmd { fill: #79c0ff; }
                 .text { fill: #c9d1d9; }
@@ -62,7 +47,7 @@ jobs:
                 .link { fill: #58a6ff; text-decoration: underline; }
                 .warn { fill: #f85149; }
                 .success { fill: #3fb950; font-weight: 600; }
-                .barTitle { fill: #c9d1d9; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+                .barTitle { fill: #c9d1d9; font-family: monospace; font-size: 13px; }
               </style>
             </defs>
 
@@ -198,8 +183,56 @@ jobs:
           </svg>
           EOF
 
-      - name: Commit SVG if changed
+      - name: Convert SVG to PNG
+        run: |
+          # Method 1: Using rsvg-convert (simple and reliable)
+          rsvg-convert -h 2600 console.svg > console.png
+          
+          # Alternative method if rsvg-convert fails
+          if [ ! -f console.png ]; then
+            # Create a simple Node.js script to convert SVG to PNG
+            cat > convert.js <<'SCRIPT'
+            const fs = require('fs');
+            const puppeteer = require('puppeteer');
+            
+            (async () => {
+              const browser = await puppeteer.launch({
+                headless: 'new',
+                args: ['--no-sandbox', '--disable-setuid-sandbox']
+              });
+              const page = await browser.newPage();
+              
+              const svgContent = fs.readFileSync('console.svg', 'utf8');
+              const html = `
+                <html>
+                <head>
+                  <style>
+                    body { margin: 0; padding: 0; }
+                  </style>
+                </head>
+                <body>
+                  ${svgContent}
+                </body>
+                </html>
+              `;
+              
+              await page.setContent(html);
+              await page.setViewport({ width: 1200, height: 2600 });
+              await page.screenshot({ 
+                path: 'console.png',
+                fullPage: true,
+                omitBackground: false
+              });
+              
+              await browser.close();
+            })();
+            SCRIPT
+            
+            node convert.js
+          fi
+
+      - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update console.svg"
-          file_pattern: console.svg
+          commit_message: "chore: update console.svg and console.png"
+          file_pattern: "console.svg console.png"

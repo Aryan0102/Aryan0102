@@ -43,12 +43,43 @@ jobs:
           COLOR_SUCCESS="#3fb950"
 
           # -------------------------------
-          # CONSOLE CONTENT
+          # SVG Build
           # -------------------------------
-          CONSOLE_CONTENT='
+          cat > console.svg <<'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="1200" height="2600" viewBox="0 0 1200 2600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+            <title id="title">Aryan Gupta — Console README</title>
+            <desc id="desc">Console style read me profile</desc>
+            <defs>
+              <style>
+                .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+                .prompt { fill: #3fb950; font-weight: 700; }
+                .cmd { fill: #79c0ff; }
+                .text { fill: #c9d1d9; }
+                .dim { fill: #8b949e; }
+                .accent { fill: #e3b341; font-weight: 700; }
+                .bullet { fill: #3fb950; }
+                .link { fill: #58a6ff; text-decoration: underline; }
+                .warn { fill: #f85149; }
+                .success { fill: #3fb950; font-weight: 600; }
+                .barTitle { fill: #c9d1d9; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+              </style>
+            </defs>
+
+            <!-- window background -->
+            <rect x="0" y="0" width="1200" height="2600" rx="12" fill="#0d1117" />
+            <!-- title bar -->
+            <rect x="0" y="0" width="1200" height="40" rx="12" fill="#161b22" />
+            <circle cx="22" cy="20" r="7" fill="#ff5f57"/>
+            <circle cx="44" cy="20" r="7" fill="#febc2e"/>
+            <circle cx="66" cy="20" r="7" fill="#28c840"/>
+            <text x="90" y="25" class="barTitle">aryan@github: ~  —  console</text>
+
+            <!-- content -->
+            <g class="t">
               <!-- whoami -->
               <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
-              <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinsonʼs Honors Program | 4.0 GPA</text>
+              <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinson Honors Program | 4.0 GPA</text>
               <text x="24" y="128" class="dim">📍 Boston, MA | Available for Co-ops/Internships: Jan – Sep 2026</text>
 
               <!-- about-me -->
@@ -90,7 +121,7 @@ jobs:
               <text x="40" y="904" class="text">- Previously led CoDesign team - 5 devs, showcased to 100+ people</text>
               
               <text x="24" y="932" class="success">✓ Knack — Computer Science Tutor</text>
-              <text x="40" y="956" class="text">- Tutoring: Fundamentals of CS 1 & 2, Discrete Structures, Math Reasoning, Cybersecurity</text>
+              <text x="40" y="956" class="text">- Tutoring: Fundamentals of CS 1 &amp; 2, Discrete Structures, Math Reasoning, Cybersecurity</text>
               <text x="40" y="980" class="text">- Helping students master fundamentals through personalized sessions</text>
 
               <!-- experience timeline -->
@@ -163,47 +194,9 @@ jobs:
 
               <!-- exit -->
               <text x="24" y="2568"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
-          '
-
-          # -------------------------------
-          # SVG Build
-          # -------------------------------
-          cat > console.svg <<SVG
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="$WIDTH" height="$HEIGHT" viewBox="0 0 $WIDTH $HEIGHT" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-            <title id="title">$TITLE</title>
-            <desc id="desc">$DESCRIPTION</desc>
-            <defs>
-              <style>
-                .t { font: $FONT; }
-                .prompt { fill: $COLOR_PROMPT; font-weight: 700; }
-                .cmd { fill: $COLOR_CMD; }
-                .text { fill: $COLOR_TEXT; }
-                .dim { fill: $COLOR_DIM; }
-                .accent { fill: $COLOR_ACCENT; font-weight: 700; }
-                .bullet { fill: $COLOR_PROMPT; }
-                .link { fill: $COLOR_LINK; text-decoration: underline; }
-                .warn { fill: $COLOR_WARN; }
-                .success { fill: $COLOR_SUCCESS; font-weight: 600; }
-                .barTitle { fill: $COLOR_TEXT; font: 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-              </style>
-            </defs>
-
-            <!-- window background -->
-            <rect x="0" y="0" width="$WIDTH" height="$HEIGHT" rx="12" fill="$COLOR_BG" />
-            <!-- title bar -->
-            <rect x="0" y="0" width="$WIDTH" height="40" rx="12" fill="$COLOR_BAR" />
-            <circle cx="22" cy="20" r="7" fill="$COLOR_CLOSE"/>
-            <circle cx="44" cy="20" r="7" fill="$COLOR_MIN"/>
-            <circle cx="66" cy="20" r="7" fill="$COLOR_MAX"/>
-            <text x="90" y="25" class="barTitle">aryan@github: ~  —  console</text>
-
-            <!-- content -->
-            <g class="t">
-            $CONSOLE_CONTENT
             </g>
           </svg>
-          SVG
+          EOF
 
       - name: Commit SVG if changed
         uses: stefanzweifel/git-auto-commit-action@v5

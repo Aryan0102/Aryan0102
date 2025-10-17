@@ -4,7 +4,7 @@
   <desc id="desc">Console style read me profile</desc>
   <defs>
     <style>
-      .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+      .t { font: 14px/24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
       .prompt { fill: #3fb950; font-weight: 700; }
       .cmd { fill: #79c0ff; }
       .text { fill: #c9d1d9; }
@@ -29,10 +29,9 @@
 
   <!-- content -->
   <g class="t">
-  
     <!-- whoami -->
     <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
-    <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinsonʼs Honors Program | 4.0 GPA</text>
+    <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinson Honors Program | 4.0 GPA</text>
     <text x="24" y="128" class="dim">📍 Boston, MA | Available for Co-ops/Internships: Jan – Sep 2026</text>
 
     <!-- about-me -->
@@ -74,7 +73,7 @@
     <text x="40" y="904" class="text">- Previously led CoDesign team - 5 devs, showcased to 100+ people</text>
     
     <text x="24" y="932" class="success">✓ Knack — Computer Science Tutor</text>
-    <text x="40" y="956" class="text">- Tutoring: Fundamentals of CS 1 & 2, Discrete Structures, Math Reasoning, Cybersecurity</text>
+    <text x="40" y="956" class="text">- Tutoring: Fundamentals of CS 1 &amp; 2, Discrete Structures, Math Reasoning, Cybersecurity</text>
     <text x="40" y="980" class="text">- Helping students master fundamentals through personalized sessions</text>
 
     <!-- experience timeline -->
@@ -147,6 +146,5 @@
 
     <!-- exit -->
     <text x="24" y="2568"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
-
   </g>
 </svg>

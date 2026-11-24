@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="2224" viewBox="0 0 1200 2224" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1200" height="2072" viewBox="0 0 1200 2072" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Aryan Gupta — Console README</title>
   <desc id="desc">Console style read me profile</desc>
   <defs>
@@ -19,7 +19,7 @@
   </defs>
 
   <!-- window background -->
-  <rect x="0" y="0" width="1200" height="2224" rx="12" fill="#0d1117" />
+  <rect x="0" y="0" width="1200" height="2072" rx="12" fill="#0d1117" />
   <!-- title bar -->
   <rect x="0" y="0" width="1200" height="40" rx="12" fill="#161b22" />
   <circle cx="22" cy="20" r="7" fill="#ff5f57"/>
@@ -30,8 +30,7 @@
   <!-- content -->
   <g class="t">
     <text x="24" y="80"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
-    <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinson Honors Program | 4.0 GPA</text>
-    <text x="24" y="128" class="dim">📍 Boston, MA</text>
+    <text x="24" y="104" class="text"><tspan class="accent">Aryan Gupta</tspan> — CS @ Northeastern University | John Martinson Honors Program | 4.0 GPA | 📍 Boston, MA</text>
     <text x="24" y="156"><tspan class="prompt">$ </tspan><tspan class="cmd">about-me --verbose</tspan></text>
     <text x="24" y="180" class="dim">&gt; Passionate about blending technology with creativity to address real-world challenges.</text>
     <text x="24" y="204" class="dim">&gt; Full-stack engineer with experience from fast-paced startups to cutting-edge research labs.</text>
@@ -42,69 +41,64 @@
     <text x="40" y="356" class="text">- Rebuilt Pismo's API verification layer</text>
     <text x="40" y="380" class="text">- Validation coverage from 15% to 70% across ~500 endpoints</text>
     <text x="24" y="408" class="success">✓ Notability — Software Engineer Co-op (San Francisco, CA | Jan – Jun 2026)</text>
-    <text x="40" y="432" class="text">- Owned the Learn feature on Android for 100K+ beta users</text>
+    <text x="40" y="432" class="text">- Helped build the Learn feature on Android for 100K+ beta users</text>
     <text x="40" y="456" class="text">- LLM-powered quizzes, flashcards, and summaries</text>
-    <text x="40" y="480" class="text">- Built an MCP server for users' notes</text>
-    <text x="24" y="508" class="success">✓ Quak Travel — Software Engineer, Engineering Team Lead (Feb 2025 – Jan 2026)</text>
-    <text x="40" y="532" class="text">- Led engineering team building an AI agent for group trip planning and booking</text>
-    <text x="40" y="556" class="text">- $130K initial funding | 200+ beta users across four universities</text>
-    <text x="24" y="584" class="success">✓ Oasis @ Northeastern — President (Jun – Dec 2026)</text>
-    <text x="40" y="608" class="text">- Started the accelerator series to take standout projects to the next level</text>
-    <text x="40" y="632" class="text">- Previously Project Series Co-Director: taught web dev to 100+ students</text>
-    <text x="40" y="656" class="text">- Led curriculum design, mentoring, and workshops</text>
-    <text x="24" y="684" class="success">✓ Teaching Assistant — CS1210 Professional Development @ Northeastern (Aug – Dec 2026)</text>
-    <text x="40" y="708" class="text">- Teaching 30+ students | Interviewing strategies, resume review, job search, and more</text>
-    <text x="24" y="736" class="success">✓ Talli — Software Engineer Intern</text>
-    <text x="40" y="760" class="text">- Independently developed iOS app streamlining booking, payments, and scheduling</text>
-    <text x="40" y="784" class="text">- 10+ barber clients | Improved retention by 20% | Loading times 60% faster with Zustand</text>
-    <text x="40" y="808" class="text">- Assisted in UI/UX redesign across all platforms</text>
-    <text x="24" y="836" class="success">✓ Optical Neural Networks Research — Undergrad Researcher (Oct 2024 – Jan 2026)</text>
-    <text x="40" y="860" class="text">- Worked with Dr. Yongmin Liu on cutting-edge ONN research</text>
-    <text x="40" y="884" class="text">- Developed GNN architectures for meta-surface electric field predictions</text>
-    <text x="40" y="908" class="text">- 83% accuracy achieved | 50% reduction in training time and data requirements</text>
-    <text x="40" y="932" class="text">- Hands-on with photonics, meta-materials, ML frameworks</text>
-    <text x="24" y="984"><tspan class="prompt">$ </tspan><tspan class="cmd">git log --oneline --work</tspan></text>
-    <text x="40" y="1012"><tspan class="accent">aug2026–dec2026</tspan><tspan class="text" x="190">Teaching Assistant, CS1210 Professional Development @ Northeastern</tspan></text>
-    <text x="40" y="1036"><tspan class="accent">jun–aug2026</tspan><tspan class="text" x="190">Visa — Software Engineer Intern, Austin TX</tspan></text>
-    <text x="40" y="1060"><tspan class="accent">jun2026–dec2026</tspan><tspan class="text" x="190">Oasis — President; started the accelerator series for standout projects</tspan></text>
-    <text x="40" y="1084"><tspan class="accent">jan–jun2026</tspan><tspan class="text" x="190">Notability — Software Engineer Co-op, San Francisco</tspan></text>
-    <text x="40" y="1108"><tspan class="accent">jun2025–now</tspan><tspan class="text" x="190">Talli — Software Engineer Intern</tspan></text>
-    <text x="40" y="1132"><tspan class="accent">jun2025–now</tspan><tspan class="text" x="190">Rainfall Learning — Leading 20+ member team on online coding-tutoring platform</tspan></text>
-    <text x="40" y="1156"><tspan class="accent">feb2025–jan2026</tspan><tspan class="text" x="190">Quak Travel — Led engineering team: AI group trip agent, $130K funding, 200+ beta users</tspan></text>
-    <text x="40" y="1180"><tspan class="accent">oct2024–jan2026</tspan><tspan class="text" x="190">Nano-Optics Lab research — optical neural networks, 83% accuracy</tspan></text>
-    <text x="24" y="1232"><tspan class="prompt">$ </tspan><tspan class="cmd">ls -la ~/projects/</tspan></text>
-    <text x="24" y="1260" class="accent">drwxr-xr-x  rainfall-learning/</text>
-    <text x="40" y="1284" class="text">└─ Live tutoring platform solving lack of collaborative coding in online education</text>
-    <text x="56" y="1308" class="text">Leading 20+ member team | Main code reviewer | Architectural decisions</text>
-    <text x="56" y="1332" class="text">Core UI: Embedded IDE with CRDT-based real-time collaboration</text>
-    <text x="56" y="1356" class="text">Video meetings, curriculum viewer, interactive Python lessons</text>
-    <text x="56" y="1380" class="text">Tech: React, TypeScript, Express, PostgreSQL, ViTest, Docusaurus</text>
-    <text x="56" y="1404" class="text">CI/CD: GitHub Actions, Docker containerization, automated testing</text>
-    <text x="24" y="1456"><tspan class="prompt">$ </tspan><tspan class="cmd">tech-stack</tspan></text>
-    <text x="24" y="1484" class="success">Languages:</text>
-    <text x="40" y="1508" class="dim">Python • Java • JavaScript • TypeScript • Swift • SQL • HTML/CSS • C • Kotlin</text>
-    <text x="24" y="1536" class="success">Frameworks &amp; Tools:</text>
-    <text x="40" y="1560" class="dim">React • React Native • Flask • Express • Docker • Prisma • Git • Postman • MySQL • AWS (EC2, S3, Lambda, RDS)</text>
-    <text x="24" y="1588" class="success">Libraries:</text>
-    <text x="40" y="1612" class="dim">TensorFlow • Pandas • NumPy • Scikit-learn • BeautifulSoup • TanStack Query • Zustand • Material UI • Jetpack Compose</text>
-    <text x="24" y="1640" class="success">Also:</text>
-    <text x="40" y="1664" class="dim">PostgreSQL • Redis • BullMQ • Stripe • Pinecone • MCP</text>
-    <text x="24" y="1716"><tspan class="prompt">$ </tspan><tspan class="cmd">tail -f learning.log</tspan></text>
-    <text x="24" y="1744" class="dim">[2026-11-15] Learning Rust for systems programming</text>
-    <text x="24" y="1768" class="dim">[2026-11-14] Studying distributed systems architecture</text>
-    <text x="24" y="1792" class="dim">[2026-11-13] Preparing for AWS Cloud Practitioner certification</text>
-    <text x="24" y="1816" class="dim">[2026-11-12] Diving into systems level programming</text>
-    <text x="24" y="1840" class="dim">[2026-11-11] Exploring LLMs and AI fundamentals</text>
-    <text x="24" y="1892"><tspan class="prompt">$ </tspan><tspan class="cmd">echo $INTERESTS</tspan></text>
-    <text x="24" y="1920"><tspan class="bullet">- </tspan><tspan class="text">Folding intricate origami</tspan></text>
-    <text x="24" y="1944"><tspan class="bullet">- </tspan><tspan class="text">Participating in cultural activities</tspan></text>
-    <text x="24" y="1968"><tspan class="bullet">- </tspan><tspan class="text">Volunteering for causes close to my heart</tspan></text>
-    <text x="24" y="2020"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
-    <text x="24" y="2048"><tspan class="text">🔗 LinkedIn: </tspan><tspan class="link">https://linkedin.com/in/aryangupta0102</tspan></text>
-    <text x="24" y="2072"><tspan class="text">📧 Email: </tspan><tspan class="warn">aryansumit0102@gmail.com</tspan></text>
-    <text x="24" y="2096"><tspan class="text">🌐 Portfolio: </tspan><tspan class="link">https://aryan-sgupta.com</tspan></text>
-    <text x="24" y="2120"><tspan class="text">🐙 GitHub: </tspan><tspan class="link">https://github.com/Aryan0102</tspan></text>
-    <text x="24" y="2144"><tspan class="text">📱 Phone: </tspan><tspan class="warn">(570) 236-4213</tspan></text>
-    <text x="24" y="2192"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
+    <text x="24" y="484" class="success">✓ Quak Travel — Software Engineer, Engineering Team Lead (Feb 2025 – Jan 2026)</text>
+    <text x="40" y="508" class="text">- Led engineering team building an AI agent for group trip planning and booking</text>
+    <text x="40" y="532" class="text">- $130K initial funding | 200+ beta users across four universities</text>
+    <text x="24" y="560" class="success">✓ Oasis @ Northeastern — President (Jun – Dec 2026)</text>
+    <text x="40" y="584" class="text">- Started the accelerator series to take standout projects to the next level</text>
+    <text x="40" y="608" class="text">- Previously Project Series Co-Director: taught web dev to 100+ students</text>
+    <text x="40" y="632" class="text">- Led curriculum design, mentoring, and workshops</text>
+    <text x="24" y="660" class="success">✓ Teaching Assistant — CS1210 Professional Development @ Northeastern (Aug – Dec 2026)</text>
+    <text x="40" y="684" class="text">- Teaching 30+ students | Interviewing strategies, resume review, job search, and more</text>
+    <text x="24" y="712" class="success">✓ Talli — Software Engineer Intern (Jun 2025 – Sep 2026)</text>
+    <text x="40" y="736" class="text">- Independently developed iOS app streamlining booking, payments, and scheduling</text>
+    <text x="40" y="760" class="text">- 10+ barber clients | Improved retention by 20% | Loading times 60% faster with Zustand</text>
+    <text x="40" y="784" class="text">- Assisted in UI/UX redesign across all platforms</text>
+    <text x="24" y="812" class="success">✓ Optical Neural Networks Research — Undergrad Researcher (Oct 2024 – Jan 2026)</text>
+    <text x="40" y="836" class="text">- Worked with Dr. Yongmin Liu on cutting-edge ONN research</text>
+    <text x="40" y="860" class="text">- Developed GNN architectures for meta-surface electric field predictions</text>
+    <text x="40" y="884" class="text">- 83% accuracy achieved | 50% reduction in training time and data requirements</text>
+    <text x="40" y="908" class="text">- Hands-on with photonics, meta-materials, ML frameworks</text>
+    <text x="24" y="960"><tspan class="prompt">$ </tspan><tspan class="cmd">git log --oneline --work</tspan></text>
+    <text x="40" y="988"><tspan class="accent">aug–dec2026</tspan><tspan class="text" x="190">Teaching Assistant, CS1210 Professional Development @ Northeastern</tspan></text>
+    <text x="40" y="1012"><tspan class="accent">jun–aug2026</tspan><tspan class="text" x="190">Visa — Software Engineer Intern, Austin TX</tspan></text>
+    <text x="40" y="1036"><tspan class="accent">jun–dec2026</tspan><tspan class="text" x="190">Oasis — President; started the accelerator series for standout projects</tspan></text>
+    <text x="40" y="1060"><tspan class="accent">jan–jun2026</tspan><tspan class="text" x="190">Notability — Software Engineer Co-op, San Francisco</tspan></text>
+    <text x="40" y="1084"><tspan class="accent">jun2025–sep2026</tspan><tspan class="text" x="190">Talli — Software Engineer Intern</tspan></text>
+    <text x="40" y="1108"><tspan class="accent">jun2025–now</tspan><tspan class="text" x="190">Rainfall Learning — Leading 20+ member team on online coding-tutoring platform</tspan></text>
+    <text x="40" y="1132"><tspan class="accent">feb2025–jan2026</tspan><tspan class="text" x="190">Quak Travel — Led engineering team: AI group trip agent, $130K funding, 200+ beta users</tspan></text>
+    <text x="40" y="1156"><tspan class="accent">oct2024–jan2026</tspan><tspan class="text" x="190">Nano-Optics Lab research — optical neural networks, 83% accuracy</tspan></text>
+    <text x="24" y="1208"><tspan class="prompt">$ </tspan><tspan class="cmd">ls -la ~/projects/</tspan></text>
+    <text x="24" y="1236" class="accent">drwxr-xr-x  rainfall-learning/</text>
+    <text x="40" y="1260" class="text">└─ Live tutoring platform solving lack of collaborative coding in online education</text>
+    <text x="56" y="1284" class="text">Leading 20+ member team | Main code reviewer | Architectural decisions</text>
+    <text x="56" y="1308" class="text">Core UI: Embedded IDE with CRDT-based real-time collaboration</text>
+    <text x="56" y="1332" class="text">Video meetings, curriculum viewer, interactive Python lessons</text>
+    <text x="56" y="1356" class="text">Tech: React, TypeScript, Express, PostgreSQL, ViTest, Docusaurus</text>
+    <text x="56" y="1380" class="text">CI/CD: GitHub Actions, Docker containerization, automated testing</text>
+    <text x="24" y="1432"><tspan class="prompt">$ </tspan><tspan class="cmd">tech-stack</tspan></text>
+    <text x="24" y="1460" class="success">Languages:</text>
+    <text x="40" y="1484" class="dim">Python • Java • JavaScript • TypeScript • Swift • SQL • HTML/CSS • C • Kotlin</text>
+    <text x="24" y="1512" class="success">Frameworks &amp; Tools:</text>
+    <text x="40" y="1536" class="dim">React • React Native • Flask • Express • Docker • Prisma • Git • Postman • MySQL • AWS (EC2, S3, Lambda, RDS)</text>
+    <text x="24" y="1564" class="success">Libraries:</text>
+    <text x="40" y="1588" class="dim">TensorFlow • Pandas • NumPy • Scikit-learn • BeautifulSoup • TanStack Query • Zustand • Material UI • Jetpack Compose</text>
+    <text x="24" y="1616" class="success">Misc:</text>
+    <text x="40" y="1640" class="dim">PostgreSQL • Redis • BullMQ • Stripe • Pinecone • MCP</text>
+    <text x="24" y="1692"><tspan class="prompt">$ </tspan><tspan class="cmd">tail -f learning.log</tspan></text>
+    <text x="24" y="1720" class="dim">[2026-11-15] Learning Rust for systems programming</text>
+    <text x="24" y="1744" class="dim">[2026-11-14] Studying distributed systems architecture</text>
+    <text x="24" y="1768" class="dim">[2026-11-13] Preparing for AWS Cloud Practitioner certification</text>
+    <text x="24" y="1792" class="dim">[2026-11-12] Diving into systems level programming</text>
+    <text x="24" y="1816" class="dim">[2026-11-11] Exploring LLMs and AI fundamentals</text>
+    <text x="24" y="1868"><tspan class="prompt">$ </tspan><tspan class="cmd">socials</tspan></text>
+    <text x="24" y="1896"><tspan class="text">🔗 LinkedIn: </tspan><tspan class="link">https://linkedin.com/in/aryangupta0102</tspan></text>
+    <text x="24" y="1920"><tspan class="text">📧 Email: </tspan><tspan class="warn">aryansumit0102@gmail.com</tspan></text>
+    <text x="24" y="1944"><tspan class="text">🌐 Portfolio: </tspan><tspan class="link">https://aryan-sgupta.com</tspan></text>
+    <text x="24" y="1968"><tspan class="text">🐙 GitHub: </tspan><tspan class="link">https://github.com/Aryan0102</tspan></text>
+    <text x="24" y="1992"><tspan class="text">📱 Phone: </tspan><tspan class="warn">(570) 236-4213</tspan></text>
+    <text x="24" y="2040"><tspan class="prompt">$ </tspan><tspan class="cmd">exit</tspan></text>
   </g>
 </svg>
